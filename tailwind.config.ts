@@ -12,6 +12,20 @@ const config: Config = {
         default: "#FFFFFF",
       },
       colors: {
+        topNavbar: {
+          background: "#0072CE",
+          text: "#FFFFFF",
+          hoverText: "#E1E1E1",
+        },
+        sidebar: {
+          background: "#232323",
+          text: "#FFFFFF",
+          hoverText: "#E1E1E1",
+        },
+        contentArea: {
+          background: "#F7F7F7",
+          text: "#333333",
+        },
         primary: "#0065FF", // Deep Blue
         secondary: "#00C4FF", // Light Blue
         accent: "#FFDD00", // Yellow
