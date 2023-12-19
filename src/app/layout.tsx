@@ -72,10 +72,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar />
+        <header>
+          <Navbar />
+        </header>
         <main className="relative overflow-hidden">
           {/*container mx-auto px-4 */}
           {children}
+          <section className="absolute inset-0 flex justify-center items-center"></section>
         </main>
         <Footer />
       </body>

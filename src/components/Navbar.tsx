@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import { NAV_LINKS } from "@/constants";
+import Button from "./Button";
 
 const Navbar = () => {
   return (
@@ -47,11 +48,19 @@ const Navbar = () => {
           <Image src="/discord.svg" width={30} height={30} alt="" />
         </Link>
         <Link href="#">
-          <button className="regular-16 text-white flexCenter cursor-pointer pb-1.5 transition-all hover:text-bold">
+          {/* <button className="regular-16 text-white flexCenter cursor-pointer pb-1.5 transition-all hover:text-bold">
             ???
-          </button>
+            </button> */}
+          <Button type="button" title="Connect Wallet" variant="btn_dark" />
         </Link>
       </div>
+      <Image
+        src="/hamburger.svg"
+        width={50}
+        height={50}
+        alt=""
+        className="inline-block cursor-pointer lg:hidden "
+      />
     </nav>
   );
 };
